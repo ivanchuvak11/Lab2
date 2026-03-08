@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks List</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div>
+        <h1>Tasks List</h1>
+        <label><input type="checkbox"> Learn English</label><br>
+        <label><input type="checkbox"> More practice </label><br>
+        <label><input type="checkbox"> Write a course work</label><br>   
+    </div>
+
+<script>
+let checks = document.querySelectorAll("input");
+for(let i=0;i<checks.length;i++){
+    
+    checks[i].onclick = function(){
+        this.parentElement.classList.toggle("done");
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    font-family: Arial;
+    background:#f0f0f0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+div{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+label{
+    display:block;
+    margin:10px 0;
+    transition:0.3s;
+}
+
+.done{
+    text-decoration: line-through;
+    color:gray;
+}
